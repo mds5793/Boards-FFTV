@@ -6,21 +6,21 @@ $(".grid-item").on("mouseenter", function(event){
 
     switch(elementID){
         case: "0"
-        //Sideload 50% of grid-item with id of "0"
+        //Sideload 50% of board grid-item with id of "0"
         break;
 
         case: "1"
-        //Sideload 50% of grid-item with id of "1"
+        //Sideload 50% of board grid-item with id of "1"
         break;
 
         case: "2"
-        //Sideload 50% of grid-item with id of "2"
+        //Sideload 50% of board grid-item with id of "2"
         break;
 
         ...
 
         case: "26":
-        //Sideload 50% of grid-item with id of "26"
+        //Sideload 50% of board grid-item with id of "26"
         break;
     }
 
@@ -34,21 +34,21 @@ $(".grid-item").on("mouseout", function(event){
 
     switch(elementID){
         case: "0"
-        //Unload grid-item with id of "0"
+        //Unload entirety of board grid-item with id of "0"
         break;
 
         case: "1"
-        //Unload grid-item with id of "1"
+        //Unload entirety of board grid-item with id of "1"
         break;
 
         case: "2"
-        //Unload grid-item with id of "2"
+        //Unload entirety of board grid-item with id of "2"
         break;
 
         ...
 
         case: "26":
-        //Unload grid-item with id of "26"
+        //Unload entirety of board grid-item with id of "26"
         break;
     }
 
@@ -62,21 +62,21 @@ $(".grid-item").on("click", function(event){
 
     switch(elementID){
         case: "0"
-        //Load 100% of grid-item with id of "0"
+        //Load 100% of board grid-item with id of "0"
         break;
 
         case: "1"
-        //Load 100% of grid-item with id of "1"
+        //Load 100% of board grid-item with id of "1"
         break;
 
         case: "2"
-        //Load 100% of grid-item with id of "2"
+        //Load 100% of board grid-item with id of "2"
         break;
 
         ...
 
         case: "26":
-        //Load 100% of grid-item with id of "26"
+        //Load 100% of board grid-item with id of "26"
         break;
     }
 
