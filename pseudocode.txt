@@ -1,0 +1,87 @@
+//Copyright (c) 2025 - Matthew D. Swift
+
+$(".grid-item").on("mouseenter", function(event){
+
+    var elementID = event.target.id;
+
+    switch(elementID){
+        case: "0"
+        //Sideload 50% of grid-item with id of "0"
+        break;
+
+        case: "1"
+        //Sideload 50% of grid-item with id of "1"
+        break;
+
+        case: "2"
+        //Sideload 50% of grid-item with id of "2"
+        break;
+
+        ...
+
+        case: "26":
+        //Sideload 50% of grid-item with id of "26"
+        break;
+    }
+
+    console.log("Mouse entered the element!");
+
+});
+
+$(".grid-item").on("mouseout", function(event){
+
+    var elementID = event.target.id;
+
+    switch(elementID){
+        case: "0"
+        //Unload grid-item with id of "0"
+        break;
+
+        case: "1"
+        //Unload grid-item with id of "1"
+        break;
+
+        case: "2"
+        //Unload grid-item with id of "2"
+        break;
+
+        ...
+
+        case: "26":
+        //Unload grid-item with id of "26"
+        break;
+    }
+
+    console.log("Mouse entered the element!");
+    
+});
+
+$(".grid-item").on("click", function(event){
+
+    var elementID = event.target.id;
+
+    switch(elementID){
+        case: "0"
+        //Load 100% of grid-item with id of "0"
+        break;
+
+        case: "1"
+        //Load 100% of grid-item with id of "1"
+        break;
+
+        case: "2"
+        //Load 100% of grid-item with id of "2"
+        break;
+
+        ...
+
+        case: "26":
+        //Load 100% of grid-item with id of "26"
+        break;
+    }
+
+    //Play slide-up animation revealing contents of the board that was just loaded...
+
+    console.log("Mouse entered the element!");
+    
+});
