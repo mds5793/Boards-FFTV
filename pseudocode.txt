@@ -86,12 +86,16 @@ $(".grid-item").on("click", function(event){
     
 });
 
-//NOTE: For this method to work, the topics/boards page must be within a div which is positioned either:
-// 1. ABSOLUTE
-// 2. FIXED
-// 3. RELATIVE
+//NOTE: For this to work the topics div must be positioned either: ABSOLUTE, FIXED, OR RELATIVE.
 function slideup(){
     $(".board-page-div").animate({
         bottom: $(window).height()
+    }, 700);
+}
+
+//NOTE: For this to work the topics div must be positioned either: ABSOLUTE, FIXED, OR RELATIVE.
+function slidedown(){
+    $(".board-page-div").animate({
+        bottom: 0
     }, 700);
 }
