@@ -92,6 +92,6 @@ $(".grid-item").on("click", function(event){
 // 3. RELATIVE
 function slideup(){
     $(".board-page-div").animate({
-        bottom: $(window).height() + $(".board-page-div").height()
+        bottom: $(window).height()
     }, 700);
 }
