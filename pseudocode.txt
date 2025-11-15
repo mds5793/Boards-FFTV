@@ -52,7 +52,7 @@ $(".grid-item").on("mouseout", function(event){
         break;
     }
 
-    console.log("Mouse entered the element!");
+    console.log("Mouse left the element!");
     
 });
 
@@ -80,8 +80,18 @@ $(".grid-item").on("click", function(event){
         break;
     }
 
-    //Play slide-up animation revealing contents of the board that was just loaded...
+    slideup();
 
-    console.log("Mouse entered the element!");
+    console.log("Board view has slidden up!");
     
 });
+
+//NOTE: For this method to work, the topics/boards page must be within a div which is positioned either:
+// 1. ABSOLUTE
+// 2. FIXED
+// 3. RELATIVE
+function slideup(){
+    $(".board-page-div").animate({
+        bottom: $(window).height() + $(".board-page-div").height()
+    }, 700);
+}
