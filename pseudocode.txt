@@ -1,5 +1,43 @@
 //Copyright (c) 2025 - Matthew D. Swift
 
+NOTE: The purpose for the following animation code is 
+to prevent the animation from being triggered too many times via click events,
+this is achieved by using the "isAnimating" variable.
+
+-----------------------------------------------------------------------------
+
+var isAnimating = false;
+
+$(".button").on("click", function(e){
+  
+  if(isAnimating){
+    return false;
+  }
+  
+  isAnimating = true;
+  
+  $(".container").animate({
+      bottom: $(window).height()
+  }, 700, function(){
+    $(".container").animate({
+      bottom: 0
+    }, 700, function(){
+      isAnimating = false;
+    });
+  });
+});
+
+-----------------------------------------------------------------------------
+
+NOTE: The following code is intended for side-loading the topic page you selected...
+
+-----------------------------------------------------------------------------
+
+$(".grid-item").on("click", function(e){
+  var elementID = e.target.id;
+  alert("Element " + elementID + " was clicked!");
+});
+
 $(".grid-item").on("mouseenter", function(event){
 
     var elementID = event.target.id;
@@ -86,6 +124,12 @@ $(".grid-item").on("click", function(event){
     
 });
 
+-----------------------------------------------------------------------------
+
+NOTE: The following code is intended to provide an example animation for the topics page...
+
+-----------------------------------------------------------------------------
+
 //NOTE: For this to work the topics div must be positioned either: ABSOLUTE, FIXED, OR RELATIVE.
 function slideup(){
     $(".topic-page-div").animate({
@@ -99,3 +143,5 @@ function slidedown(){
         bottom: 0
     }, 700);
 }
+
+-----------------------------------------------------------------------------
